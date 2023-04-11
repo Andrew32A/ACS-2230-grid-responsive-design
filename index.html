@@ -144,6 +144,35 @@
       transform: rotate(15deg);
     }
 
+    @media only screen and (max-width: 800px) {
+      .dashboard {
+        grid-template-areas:"t t t"
+                            "m m c"
+                            "p p p"
+                            "w l l"
+                            "g g g";
+        grid-template-rows: 100px 200px 200px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .dashboard {
+        grid-template-areas: "t t"
+                            "m c"
+                            "w l"
+                            "p p"
+                            "g g";
+        grid-template-rows: 100px 200px 200px 200px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+      }
+    }
+
+
   </style>
 </head>
 <body>
